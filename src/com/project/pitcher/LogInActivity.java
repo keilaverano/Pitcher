@@ -52,7 +52,7 @@ public class LogInActivity extends Activity {
 	
 	public void proceedToHome()
 	{
-		Intent intent = new Intent(LogInActivity.this, HomeActivity.class);
+		Intent intent = new Intent(LogInActivity.this, TimelineActivity.class);
 		startActivity(intent); 
 	}
 	

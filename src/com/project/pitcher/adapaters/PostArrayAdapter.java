@@ -1,6 +1,9 @@
-package com.project.pitcher;
+package com.project.pitcher.adapaters;
 
 import java.util.ArrayList;
+
+import com.project.pitcher.Idea;
+import com.project.pitcher.R;
 
 import android.content.Context;
 import android.view.LayoutInflater;

@@ -20,7 +20,7 @@ public class SettingsActivity extends Activity{
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
+		getMenuInflater().inflate(R.menu.settings, menu);
 		return true;
 	}
 
@@ -29,22 +29,24 @@ public class SettingsActivity extends Activity{
 		Intent intent;
 		
 		switch (item.getItemId()) {
-
+		
+		case R.id.action_home:
+			intent = new Intent(SettingsActivity.this, TimelineActivity.class);
+			startActivity(intent);
 		case R.id.action_profile:
-			intent = new Intent(SettingsActivity.this, ProfileActivity.class);
-			startActivity(intent); 
-			return true;
-		case R.id.action_settings:
-
+			intent = new Intent(SettingsActivity.this, TimelineActivity.class);
+			startActivity(intent);
 			return true;
 		case R.id.action_seek:
-
+			intent = new Intent(SettingsActivity.this, TimelineActivity.class);
+			startActivity(intent);
 			return true;
 		case R.id.action_terms_and_policies:
 
 			return true;
 		case R.id.action_logout:
-
+			intent = new Intent(SettingsActivity.this, LogInActivity.class);
+			startActivity(intent);
 			return true;
 		default:
 			return super.onOptionsItemSelected(item);

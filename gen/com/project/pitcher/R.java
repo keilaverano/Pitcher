@@ -51,19 +51,21 @@ public final class R {
         public static final int submit_button=0x7f020011;
     }
     public static final class id {
-        public static final int action_home=0x7f090019;
-        public static final int action_logout=0x7f09001e;
-        public static final int action_profile=0x7f09001a;
-        public static final int action_seek=0x7f09001c;
-        public static final int action_settings=0x7f09001b;
-        public static final int action_terms_and_policies=0x7f09001d;
-        public static final int home_idea_description=0x7f090018;
-        public static final int home_idea_title=0x7f090017;
-        public static final int home_name_of_user=0x7f090014;
-        public static final int home_profile_photo=0x7f090013;
-        public static final int home_time_posted=0x7f090016;
-        public static final int home_username=0x7f090015;
-        public static final int imageView1=0x7f09000d;
+        public static final int action_home=0x7f09001b;
+        public static final int action_logout=0x7f09001f;
+        public static final int action_profile=0x7f090020;
+        public static final int action_seek=0x7f09001d;
+        public static final int action_settings=0x7f09001c;
+        public static final int action_terms_and_policies=0x7f09001e;
+        public static final int divider=0x7f09000d;
+        public static final int home_idea_description=0x7f09001a;
+        public static final int home_idea_title=0x7f090019;
+        public static final int home_name_of_user=0x7f090016;
+        public static final int home_profile_photo=0x7f090015;
+        public static final int home_time_posted=0x7f090018;
+        public static final int home_username=0x7f090017;
+        public static final int imageView1=0x7f09000e;
+        public static final int pager=0x7f090014;
         public static final int password_field=0x7f090001;
         public static final int profile_followers=0x7f090007;
         public static final int profile_followers_num=0x7f090008;
@@ -73,31 +75,35 @@ public final class R {
         public static final int profile_new_idea=0x7f090006;
         public static final int profile_user_photo=0x7f090003;
         public static final int profile_username=0x7f090005;
-        public static final int settings_confirm_password=0x7f090011;
-        public static final int settings_name=0x7f09000e;
-        public static final int settings_password=0x7f090010;
-        public static final int settings_submit_button=0x7f090012;
-        public static final int settings_username=0x7f09000f;
+        public static final int settings_confirm_password=0x7f090012;
+        public static final int settings_name=0x7f09000f;
+        public static final int settings_password=0x7f090011;
+        public static final int settings_submit_button=0x7f090013;
+        public static final int settings_username=0x7f090010;
         public static final int submit_button=0x7f090002;
         public static final int textView1=0x7f09000b;
         public static final int textView2=0x7f09000c;
         public static final int username_field=0x7f090000;
     }
     public static final class layout {
-        public static final int activity_home=0x7f030000;
-        public static final int activity_log_in=0x7f030001;
-        public static final int activity_profile=0x7f030002;
-        public static final int activity_settings=0x7f030003;
+        public static final int activity_log_in=0x7f030000;
+        public static final int activity_profile=0x7f030001;
+        public static final int activity_settings=0x7f030002;
+        public static final int activity_timeline=0x7f030003;
         public static final int edit_text_design=0x7f030004;
-        public static final int post_row_layout=0x7f030005;
+        public static final int fragment_home=0x7f030005;
+        public static final int post_row_layout=0x7f030006;
     }
     public static final class menu {
         public static final int main=0x7f080000;
+        public static final int settings=0x7f080001;
+        public static final int timeline=0x7f080002;
     }
     public static final class string {
         public static final int action_settings=0x7f060001;
         public static final int app_name=0x7f060000;
         public static final int hello_world=0x7f060002;
+        public static final int title_activity_timeline=0x7f060003;
     }
     public static final class style {
         /** 

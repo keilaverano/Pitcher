@@ -22,24 +22,37 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="HomeActivity">
+        <activity android:name="com.project.pitcher.HomeActivity" >
             <intent-filter>
-                <action android:name="android.app.action.VIEW"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.app.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="ProfileActivity">
+        <activity android:name="com.project.pitcher.ProfileActivity" >
             <intent-filter>
-                <action android:name="android.app.action.VIEW"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.app.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="SettingsActivity">
+        <activity android:name="com.project.pitcher.SettingsActivity" >
             <intent-filter>
-                <action android:name="android.app.action.VIEW"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.app.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name="com.project.pitcher.TimelineActivity" >
+            <intent-filter>
+                <action android:name="android.app.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+       
     </application>
 
 </manifest>
+
+
