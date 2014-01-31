@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.project.pitcher.MainActivity"
+            android:name="com.project.pitcher.LogInActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,6 +23,18 @@
             </intent-filter>
         </activity>
         <activity android:name="HomeActivity">
+            <intent-filter>
+                <action android:name="android.app.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="ProfileActivity">
+            <intent-filter>
+                <action android:name="android.app.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="SettingsActivity">
             <intent-filter>
                 <action android:name="android.app.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>

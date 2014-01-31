@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_brown"
+    android:padding="30dp"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_user" />
+
+    <EditText
+        android:id="@+id/settings_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Name"
+        android:padding="10dp"
+        android:text="Keila Verano" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/settings_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="Username"
+        android:padding="10dp"
+        android:text="keilaverano" />
+
+    <EditText
+        android:id="@+id/settings_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:text="keila829" />
+
+    <EditText
+        android:id="@+id/settings_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:text="keila829" />
+
+    <Button
+        android:id="@+id/settings_submit_button"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:textColor="@color/ivory"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:text="Save Changes" />
+
+</LinearLayout>

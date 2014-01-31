@@ -3,6 +3,7 @@ package com.project.pitcher;
 import java.util.ArrayList;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -18,15 +19,16 @@ public class HomeActivity extends ListActivity {
 	private ArrayList<Idea> ideas = new ArrayList<Idea>();;
 	Idea first, second, third;
 	private Runnable viewParts;
-	private CustomArrayAdapter listAdapter;
+	private PostArrayAdapter listAdapter;
 	private ListView list;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_home);
-
-		listAdapter = new CustomArrayAdapter(this, R.layout.row_layout, ideas);
+		setTitle("Home");
+		
+		listAdapter = new PostArrayAdapter(this, R.layout.post_row_layout, ideas);
 		setListAdapter(listAdapter);
 
 		// runnable thread
@@ -75,7 +77,7 @@ public class HomeActivity extends ListActivity {
 					"Business Lister",
 					"I need an application that suggests every possible business I can have",
 					"19:00"));
-			listAdapter = new CustomArrayAdapter(HomeActivity.this, R.layout.row_layout,
+			listAdapter = new PostArrayAdapter(HomeActivity.this, R.layout.post_row_layout,
 					ideas);
 
 			// display the list.
@@ -91,17 +93,18 @@ public class HomeActivity extends ListActivity {
 	}
 
 	public boolean onOptionsItemSelected(MenuItem item) {
-
+		
+		Intent intent;
+		
 		switch (item.getItemId()) {
 
-		case R.id.action_home:
-			item.setVisible(false);
-			return true;
 		case R.id.action_profile:
-
+			intent = new Intent(HomeActivity.this, ProfileActivity.class);
+			startActivity(intent); 
 			return true;
 		case R.id.action_settings:
-
+			intent = new Intent(HomeActivity.this, SettingsActivity.class);
+			startActivity(intent); 
 			return true;
 		case R.id.action_seek:
 
