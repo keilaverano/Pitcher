@@ -34,6 +34,9 @@ public class TimelineActivity extends FragmentActivity implements
 		viewPager.setAdapter(mAdapter);
 		actionBar.setHomeButtonEnabled(false);
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+		
+		getActionBar().setBackgroundDrawable(getResources().getDrawable(R.color.blue));
+		getActionBar().setStackedBackgroundDrawable(getResources().getDrawable(R.color.brown));
 
 		// Adding Tabs
 		for (String tab_name : tabs) {

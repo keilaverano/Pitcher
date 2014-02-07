@@ -27,6 +27,8 @@ public class LogInActivity extends Activity {
 		password_field = (EditText) findViewById(R.id.password_field);
 		submit_button = (Button) findViewById(R.id.submit_button);
 		
+		getActionBar().setBackgroundDrawable(getResources().getDrawable(R.color.blue));
+		
 		submit_button.setOnClickListener(new OnClickListener() {
 			
 			@Override
