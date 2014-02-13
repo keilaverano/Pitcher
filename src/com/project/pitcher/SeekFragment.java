@@ -19,7 +19,6 @@ import com.project.pitcher.adapaters.PostArrayAdapter;
 public class SeekFragment extends ListFragment {
 
 	private ArrayList<Idea> ideas = new ArrayList<Idea>();
-	Idea first, second, third;
 	private PostArrayAdapter listAdapter;
 	ListView list;
 
@@ -28,7 +27,7 @@ public class SeekFragment extends ListFragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 
-		View rootView = inflater.inflate(R.layout.fragment_home, container,
+		View rootView = inflater.inflate(R.layout.fragment_seek, container,
 				false);
 		
 		addIdeas();

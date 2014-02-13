@@ -6,12 +6,18 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class NewPostActivity extends Activity{
-
+public class DetailActivity extends Activity {
+	
+	private static final String TAG_NAME = "name";
+	private static final String TAG_USERNAME = "username";
+	private static final String TAG_TIME_POSTED = "time_posted";
+	private static final String TAG_IDEA_TITLE = "title";
+	private static final String TAG_IDEA_DESCRIPTION = "description";
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_new_post);
+		setContentView(R.layout.activity_detail);
 		setTitle("New Idea");
 		getActionBar().setBackgroundDrawable(getResources().getDrawable(R.color.blue));
 		
@@ -32,8 +38,6 @@ public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 
 		case R.id.action_accept_post:
-			intent = new Intent(NewPostActivity.this, NewPostActivity.class);
-			startActivity(intent); 
 			return true;
 		case R.id.action_cancel_post:
 			this.finish();

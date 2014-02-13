@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
     
-	
-	<item android:id="@+id/action_cancel_post"
+    <item android:id="@+id/action_cancel_form"
           android:icon="@drawable/ic_cancel"
           android:title="New Idea"
           android:showAsAction="always" />
-	
-	<item android:id="@+id/action_accept_post"
-          android:icon="@drawable/ic_accept"
-          android:title="New Idea"
-          android:showAsAction="always" />
-	
-	
-    
+
 </menu>

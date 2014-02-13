@@ -19,7 +19,12 @@ public class FollowingActivity extends ListActivity{
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.list_layout);
+		setContentView(R.layout.list_layout);		
+
+		getActionBar().setTitle("Following");
+//		getActionBar().setIcon(R.drawable.ic_sign_up);
+		getActionBar().setBackgroundDrawable(
+				getResources().getDrawable(R.color.blue));
 		
 		addFollowers();
 		

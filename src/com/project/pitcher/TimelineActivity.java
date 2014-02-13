@@ -22,7 +22,6 @@ public class TimelineActivity extends FragmentActivity implements
 	// Tab titles
 	private String[] tabs = { "Home", "Profile", "Seek" };
 	private Intent intent;
-	String selectedIndex = "";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -45,10 +44,6 @@ public class TimelineActivity extends FragmentActivity implements
 		for (String tab_name : tabs) {
 			actionBar.addTab(actionBar.newTab().setText(tab_name).setTabListener(this));
 		}
-
-		Intent intent = getIntent();
-		selectedIndex = intent.getStringExtra("selectedIndex");
-		
 		
 		viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
 

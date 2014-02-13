@@ -70,26 +70,18 @@ public class RegisterActivity extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.settings, menu);
+		getMenuInflater().inflate(R.menu.sign_up, menu);
 		return true;
 	}
 
 	public boolean onOptionsItemSelected(MenuItem item) {
-
+		
 		Intent intent;
-
+		
 		switch (item.getItemId()) {
 
-		case R.id.action_home:
-			intent = new Intent(RegisterActivity.this, TimelineActivity.class);
-			startActivity(intent);
-		
-		case R.id.action_terms_and_policies:
-
-			return true;
-		case R.id.action_logout:
-			intent = new Intent(RegisterActivity.this, LogInActivity.class);
-			startActivity(intent);
+		case R.id.action_cancel_form:
+			this.finish();
 			return true;
 		default:
 			return super.onOptionsItemSelected(item);
