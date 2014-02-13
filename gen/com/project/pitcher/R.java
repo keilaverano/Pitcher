@@ -12,13 +12,17 @@ public final class R {
     }
     public static final class color {
         public static final int black=0x7f040000;
-        public static final int blue=0x7f040006;
+        public static final int blue=0x7f040007;
         public static final int brown=0x7f040001;
+        public static final int cream=0x7f040005;
+        public static final int dark_blue=0x7f040008;
+        public static final int green=0x7f04000b;
         public static final int ivory=0x7f040004;
-        public static final int light_blue=0x7f040007;
+        public static final int light_blue=0x7f040009;
         public static final int light_brown=0x7f040002;
         public static final int light_brown_2=0x7f040003;
-        public static final int yellow_green=0x7f040005;
+        public static final int red=0x7f04000a;
+        public static final int yellow_green=0x7f040006;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -31,73 +35,96 @@ public final class R {
         public static final int activity_vertical_margin=0x7f050001;
     }
     public static final class drawable {
-        public static final int ic_bad_idea=0x7f020000;
-        public static final int ic_camera=0x7f020001;
-        public static final int ic_collaborate=0x7f020002;
-        public static final int ic_delete=0x7f020003;
-        public static final int ic_gallery=0x7f020004;
-        public static final int ic_good_idea=0x7f020005;
-        public static final int ic_launcher=0x7f020006;
-        public static final int ic_message=0x7f020007;
-        public static final int ic_new_idea=0x7f020008;
-        public static final int ic_new_post=0x7f020009;
-        public static final int ic_notification=0x7f02000a;
-        public static final int ic_reply=0x7f02000b;
-        public static final int ic_settings=0x7f02000c;
-        public static final int ic_user=0x7f02000d;
-        public static final int pitcher_icon=0x7f02000e;
-        public static final int pitcher_logo=0x7f02000f;
-        public static final int private_icon=0x7f020010;
-        public static final int submit_button=0x7f020011;
+        public static final int button_changing_color=0x7f020000;
+        public static final int ic_bad_idea=0x7f020001;
+        public static final int ic_boy=0x7f020002;
+        public static final int ic_camera=0x7f020003;
+        public static final int ic_collaborate=0x7f020004;
+        public static final int ic_delete=0x7f020005;
+        public static final int ic_gallery=0x7f020006;
+        public static final int ic_girl=0x7f020007;
+        public static final int ic_good_idea=0x7f020008;
+        public static final int ic_launcher=0x7f020009;
+        public static final int ic_message=0x7f02000a;
+        public static final int ic_new_idea=0x7f02000b;
+        public static final int ic_new_post=0x7f02000c;
+        public static final int ic_notification=0x7f02000d;
+        public static final int ic_reply=0x7f02000e;
+        public static final int ic_settings=0x7f02000f;
+        public static final int ic_sign_up=0x7f020010;
+        public static final int ic_user=0x7f020011;
+        public static final int link_changing_color=0x7f020012;
+        public static final int pitcher_icon=0x7f020013;
+        public static final int pitcher_logo=0x7f020014;
+        public static final int private_icon=0x7f020015;
+        public static final int submit_button=0x7f020016;
+        public static final int tabs_changing_color=0x7f020017;
     }
     public static final class id {
-        public static final int action_home=0x7f09001b;
-        public static final int action_logout=0x7f09001f;
-        public static final int action_profile=0x7f090020;
-        public static final int action_seek=0x7f09001d;
-        public static final int action_settings=0x7f09001c;
-        public static final int action_terms_and_policies=0x7f09001e;
-        public static final int divider=0x7f09000d;
+        public static final int action_accept_post=0x7f090027;
+        public static final int action_cancel_post=0x7f090026;
+        public static final int action_home=0x7f090029;
+        public static final int action_logout=0x7f09002b;
+        public static final int action_new_idea=0x7f090028;
+        public static final int action_settings=0x7f09002c;
+        public static final int action_terms_and_policies=0x7f09002a;
+        public static final int button2=0x7f090022;
+        public static final int button3=0x7f090024;
+        public static final int divider=0x7f090025;
+        public static final int editText1=0x7f090005;
+        public static final int editText2=0x7f090006;
+        public static final int follow_unfollow_button=0x7f090014;
+        public static final int follower_name=0x7f090012;
+        public static final int follower_photo=0x7f090011;
+        public static final int follower_username=0x7f090013;
+        public static final int followers=0x7f090020;
+        public static final int followers_label=0x7f09001f;
+        public static final int following_label=0x7f090021;
         public static final int home_idea_description=0x7f09001a;
         public static final int home_idea_title=0x7f090019;
         public static final int home_name_of_user=0x7f090016;
         public static final int home_profile_photo=0x7f090015;
         public static final int home_time_posted=0x7f090018;
         public static final int home_username=0x7f090017;
-        public static final int imageView1=0x7f09000e;
-        public static final int pager=0x7f090014;
+        public static final int ideas_label=0x7f090023;
+        public static final int imageView1=0x7f090007;
+        public static final int imageView2=0x7f090008;
+        public static final int no_account=0x7f090003;
+        public static final int pager=0x7f090010;
         public static final int password_field=0x7f090001;
-        public static final int profile_followers=0x7f090007;
-        public static final int profile_followers_num=0x7f090008;
-        public static final int profile_following=0x7f090009;
-        public static final int profile_following_num=0x7f09000a;
-        public static final int profile_name_of_user=0x7f090004;
-        public static final int profile_new_idea=0x7f090006;
-        public static final int profile_user_photo=0x7f090003;
-        public static final int profile_username=0x7f090005;
-        public static final int settings_confirm_password=0x7f090012;
-        public static final int settings_name=0x7f09000f;
-        public static final int settings_password=0x7f090011;
-        public static final int settings_submit_button=0x7f090013;
-        public static final int settings_username=0x7f090010;
+        public static final int profile_description=0x7f09001e;
+        public static final int profile_name_of_user=0x7f09001c;
+        public static final int profile_user_photo=0x7f09001b;
+        public static final int profile_username=0x7f09001d;
+        public static final int settings_confirm_password=0x7f09000e;
+        public static final int settings_name=0x7f09000b;
+        public static final int settings_password=0x7f09000d;
+        public static final int settings_profile_photo=0x7f090009;
+        public static final int settings_submit_button=0x7f09000f;
+        public static final int settings_upload_button=0x7f09000a;
+        public static final int settings_username=0x7f09000c;
+        public static final int sign_up=0x7f090004;
         public static final int submit_button=0x7f090002;
-        public static final int textView1=0x7f09000b;
-        public static final int textView2=0x7f09000c;
         public static final int username_field=0x7f090000;
     }
     public static final class layout {
         public static final int activity_log_in=0x7f030000;
-        public static final int activity_profile=0x7f030001;
-        public static final int activity_settings=0x7f030002;
-        public static final int activity_timeline=0x7f030003;
-        public static final int edit_text_design=0x7f030004;
-        public static final int fragment_home=0x7f030005;
-        public static final int post_row_layout=0x7f030006;
+        public static final int activity_new_post=0x7f030001;
+        public static final int activity_register=0x7f030002;
+        public static final int activity_settings=0x7f030003;
+        public static final int activity_timeline=0x7f030004;
+        public static final int edit_text_design=0x7f030005;
+        public static final int followers_row_layout=0x7f030006;
+        public static final int fragment_home=0x7f030007;
+        public static final int list_layout=0x7f030008;
+        public static final int post_row_layout=0x7f030009;
+        public static final int profile_header=0x7f03000a;
     }
     public static final class menu {
         public static final int main=0x7f080000;
-        public static final int settings=0x7f080001;
-        public static final int timeline=0x7f080002;
+        public static final int new_post=0x7f080001;
+        public static final int settings=0x7f080002;
+        public static final int timeline=0x7f080003;
     }
     public static final class string {
         public static final int action_settings=0x7f060001;

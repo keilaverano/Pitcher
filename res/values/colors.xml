@@ -5,14 +5,13 @@
     <color name="light_brown">#e7ddd3</color>
     <color name="light_brown_2">#CCC3BA</color>
     <color name="ivory">#ebebd3</color>
+    <color name="cream">#f9f5f0</color>
     <color name="yellow_green">#cfca4c</color>
     <color name="blue">#5eb299</color>
-    <color name="light_blue">#9fe5c2</color>
-    
-    
-    
-
-    
+    <color name="dark_blue">#70A99A</color>
+    <color name="light_blue">#9fe5c2</color>   
+    <color name="red">#F23C3C</color>
+    <color name="green">#66bb45</color>
 </resources>
 
 

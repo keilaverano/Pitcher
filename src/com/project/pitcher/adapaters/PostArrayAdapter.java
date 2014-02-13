@@ -68,6 +68,13 @@ public class PostArrayAdapter extends ArrayAdapter<Idea> {
 			idea_description.setText(i.getIdeaDescription());
 		}
 		
+		if(profile_photo!=null)
+		{
+			profile_photo.setImageResource(i.getImage());
+		}
+		
+		//profile_photo.setImageResource(R.drawable.blah);
+		
 		return rowView;
 	}
 }

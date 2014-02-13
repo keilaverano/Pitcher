@@ -1,5 +1,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
-       
+
+     <item android:id="@+id/action_new_idea"
+          android:icon="@drawable/ic_new_post"
+          android:title="New Idea"
+          android:showAsAction="always" />
+    
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"

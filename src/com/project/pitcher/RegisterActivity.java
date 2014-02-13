@@ -14,7 +14,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
 
-public class SettingsActivity extends Activity {
+public class RegisterActivity extends Activity {
 
 	private static int RESULT_LOAD_IMAGE = 1;
 	Button upload_button;
@@ -23,9 +23,9 @@ public class SettingsActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_settings);
-		getActionBar().setTitle("Settings");
-		getActionBar().setIcon(R.drawable.ic_settings);
+		setContentView(R.layout.activity_register);
+		getActionBar().setTitle("Sign Up	");
+		getActionBar().setIcon(R.drawable.ic_sign_up);
 		getActionBar().setBackgroundDrawable(
 				getResources().getDrawable(R.color.blue));
 
@@ -81,14 +81,14 @@ public class SettingsActivity extends Activity {
 		switch (item.getItemId()) {
 
 		case R.id.action_home:
-			intent = new Intent(SettingsActivity.this, TimelineActivity.class);
+			intent = new Intent(RegisterActivity.this, TimelineActivity.class);
 			startActivity(intent);
-	
+		
 		case R.id.action_terms_and_policies:
 
 			return true;
 		case R.id.action_logout:
-			intent = new Intent(SettingsActivity.this, LogInActivity.class);
+			intent = new Intent(RegisterActivity.this, LogInActivity.class);
 			startActivity(intent);
 			return true;
 		default:

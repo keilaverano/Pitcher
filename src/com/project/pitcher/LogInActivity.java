@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 
 public class LogInActivity extends Activity {
@@ -17,15 +18,19 @@ public class LogInActivity extends Activity {
 	EditText username_field, password_field;
 	Button submit_button;
 	String username = "keilaverano", password = "keila829";
+	Intent intent;
+	TextView sign_up;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_log_in);
 		setTitle("Log In");
+		
 		username_field = (EditText) findViewById(R.id.username_field);
 		password_field = (EditText) findViewById(R.id.password_field);
 		submit_button = (Button) findViewById(R.id.submit_button);
+		sign_up = (TextView) findViewById(R.id.sign_up);
 		
 		getActionBar().setBackgroundDrawable(getResources().getDrawable(R.color.blue));
 		
@@ -42,7 +47,17 @@ public class LogInActivity extends Activity {
 					showWarning();
 				}		
 			}
-		});	
+		});
+		
+		sign_up.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				proceedToRegister();
+				
+			}
+		});
+		
 	}
 
 	@Override
@@ -54,7 +69,7 @@ public class LogInActivity extends Activity {
 	
 	public void proceedToHome()
 	{
-		Intent intent = new Intent(LogInActivity.this, TimelineActivity.class);
+		intent = new Intent(LogInActivity.this, TimelineActivity.class);
 		startActivity(intent); 
 	}
 	
@@ -78,4 +93,10 @@ public class LogInActivity extends Activity {
 		alertDialog.show();
 	}
 
+	
+	public void proceedToRegister()
+	{
+		intent = new Intent(LogInActivity.this, RegisterActivity.class);
+		startActivity(intent); 
+	}
 }

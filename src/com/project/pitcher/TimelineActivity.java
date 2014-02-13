@@ -1,16 +1,17 @@
 package com.project.pitcher;
 
-import com.project.pitcher.adapaters.TabsPagerAdapter;
-
 import android.app.ActionBar;
-import android.app.FragmentTransaction;
 import android.app.ActionBar.Tab;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+
+import com.project.pitcher.adapaters.TabsPagerAdapter;
 
 public class TimelineActivity extends FragmentActivity implements
 		ActionBar.TabListener {
@@ -20,6 +21,8 @@ public class TimelineActivity extends FragmentActivity implements
 	private ActionBar actionBar;
 	// Tab titles
 	private String[] tabs = { "Home", "Profile", "Seek" };
+	private Intent intent;
+	String selectedIndex = "";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -36,20 +39,26 @@ public class TimelineActivity extends FragmentActivity implements
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 		
 		getActionBar().setBackgroundDrawable(getResources().getDrawable(R.color.blue));
-		getActionBar().setStackedBackgroundDrawable(getResources().getDrawable(R.color.brown));
+		getActionBar().setStackedBackgroundDrawable(getResources().getDrawable(R.drawable.tabs_changing_color));
 
 		// Adding Tabs
 		for (String tab_name : tabs) {
 			actionBar.addTab(actionBar.newTab().setText(tab_name).setTabListener(this));
 		}
 
+		Intent intent = getIntent();
+		selectedIndex = intent.getStringExtra("selectedIndex");
+		
+		
 		viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
 
 			@Override
 			public void onPageSelected(int position) {
 				// on changing the page
-				// make respected tab selected
+				// make respected tab selected	
+						
 				actionBar.setSelectedNavigationItem(position);
+				
 			}
 
 			@Override
@@ -60,6 +69,8 @@ public class TimelineActivity extends FragmentActivity implements
 			public void onPageScrollStateChanged(int arg0) {
 			}
 		});
+		
+		
 	}
 	
 	@Override
@@ -75,6 +86,10 @@ public class TimelineActivity extends FragmentActivity implements
 		
 		switch (item.getItemId()) {
 
+		case R.id.action_new_idea:
+			intent = new Intent(TimelineActivity.this, NewPostActivity.class);
+			startActivity(intent); 
+			return true;
 		case R.id.action_settings:
 			intent = new Intent(TimelineActivity.this, SettingsActivity.class);
 			startActivity(intent); 
@@ -105,6 +120,24 @@ public class TimelineActivity extends FragmentActivity implements
 
 	@Override
 	public void onTabUnselected(Tab tab, FragmentTransaction ft) {
+	}
+	
+	public void goToFollowers(View v)
+	{
+		intent = new Intent(this, FollowersActivity.class);
+		startActivity(intent); 
+	}
+	
+	public void goToFollowing(View v)
+	{
+		intent = new Intent(this, FollowingActivity.class);
+		startActivity(intent); 
+	}
+	
+	public void goToIdeas(View v)
+	{
+		intent = new Intent(this, IdeaListActivity.class);
+		startActivity(intent);
 	}
 
 }

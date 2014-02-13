@@ -13,17 +13,14 @@
         android:id="@+id/username_field"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/password_field"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="99dp"
+        android:layout_marginTop="65dp"
         android:ellipsize="start"
-        android:hint="Username"
-        android:text="keilaverano"
+        android:ems="15"
         android:gravity="center"
-        android:ems="15" >
-
-        <requestFocus />
-    </EditText>
+        android:hint="Username"
+        android:text="keilaverano" />
 
     <EditText
         android:id="@+id/password_field"
@@ -31,23 +28,47 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/username_field"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="37dp"
-        android:ems="15"
+        android:layout_marginTop="40dp"
         android:ellipsize="start"
-        android:text="keila829"
-        android:hint="Password"
+        android:ems="15"
         android:gravity="center"
-        android:inputType="textPassword" />
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:text="keila829" />
 
     <Button
         android:id="@+id/submit_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/password_field"
         android:layout_below="@+id/password_field"
+        android:layout_marginTop="49dp"
+        android:background="@drawable/button_changing_color"
+        android:text="Submit"
+        android:textColor="@color/ivory" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submit_button"
         android:layout_centerHorizontal="true"
-        android:background="@color/blue"
-        android:layout_marginTop="70dp"
-        android:textColor="@color/ivory"
-        android:text="Submit" />
+        android:layout_marginTop="40dp" >
+
+        <TextView
+            android:id="@+id/no_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No account?"
+            android:textColor="@color/blue" />
+
+        <TextView
+            android:id="@+id/sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/yellow_green" />
+
+    </LinearLayout>
 
 </RelativeLayout>

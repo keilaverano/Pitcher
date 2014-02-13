@@ -39,8 +39,6 @@
         android:ems="10"
         android:layout_gravity="center"
         android:hint="Name"
-        android:text="Keila Verano"
-        android:gravity="center"
         android:padding="10dp" >
 
         <requestFocus />
@@ -53,7 +51,6 @@
         android:layout_gravity="center"
         android:ems="10"
         android:hint="Username"
-        android:text="keilaverano"
         android:padding="10dp" />
 
     <EditText

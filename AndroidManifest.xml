@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="16"
+        android:minSdkVersion="14"
         android:targetSdkVersion="18" />
 
     <application
@@ -50,7 +50,35 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-       
+       <activity android:name="com.project.pitcher.RegisterActivity" >
+            <intent-filter>
+                <action android:name="android.app.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.project.pitcher.FollowersActivity" >
+            <intent-filter>
+                <action android:name="android.app.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.project.pitcher.FollowingActivity" >
+            <intent-filter>
+                <action android:name="android.app.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.project.pitcher.NewPostActivity" >
+            <intent-filter>
+                <action android:name="android.app.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
     </application>
 
 </manifest>
