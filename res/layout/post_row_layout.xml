@@ -1,52 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" 
-    android:orientation="horizontal"
-    android:background="@color/light_brown">
+    android:layout_height="match_parent"
+    android:background="@color/light_brown"
+    android:orientation="horizontal" >
     
-    <ImageView
+    <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical" >
+         
+    <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal" >
+             
+    
+     <ImageView
         android:id="@+id/home_profile_photo"
         android:layout_width="93dp"
         android:layout_height="93dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="5dp"
         android:layout_marginTop="10dp"
-        android:bottom="1dp"
+        android:layout_marginBottom="10dp"
         android:src="@drawable/ic_user" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical" >
-
-        <LinearLayout
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:orientation="vertical" >
+         
+         <TextView
+          	android:id="@+id/home_name_of_user"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-
-            <TextView
-                android:id="@+id/home_name_of_user"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="5dp"
-                android:text="Name of User"
-                android:textColor="@color/blue"
-                android:textSize="20sp" />
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent" >
-            </RelativeLayout>
-
-        </LinearLayout>
-        
-       <TextView
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Name"
+            android:textColor="@color/blue"
+            android:textSize="20sp" />      
+         
+         <TextView
            android:id="@+id/home_username"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:textColor="@color/yellow_green"
            android:text="username" />
+          
+        <TextView
+        	android:id="@+id/home_time_posted"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginRight="5dp"
+        	android:layout_marginTop="5dp"
+        	android:gravity="right"
+        	android:text="00:00"
+        	android:visibility="gone" />
 
     	<TextView
     	    android:id="@+id/home_idea_title"
@@ -54,26 +65,39 @@
     	    android:layout_height="wrap_content"
     	    android:layout_marginRight="10dp"
     	    android:layout_marginTop="5dp"
+    	    android:layout_marginBottom="5dp"
+    	    android:textStyle="bold"
+    	    android:textColor="@color/brown"
     	    android:text="Title" />
 
     	<TextView
     	    android:id="@+id/home_idea_description"
     	    android:layout_width="wrap_content"
     	    android:layout_height="wrap_content"
-    	    android:layout_marginBottom="10dp"
     	    android:layout_marginRight="10dp"
+    	    android:layout_marginBottom="10dp"
+    	    android:visibility="gone"
+    	    android:textColor="@color/brown"
     	    android:text="Description" />
-    	
-    </LinearLayout>
+         
+     </LinearLayout>
+     
+     </LinearLayout>
 
-    <TextView
-        android:id="@+id/home_time_posted"
+    <ImageView
+        android:id="@+id/home_idea_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="5dp"
-        android:layout_marginTop="5dp"
-        android:gravity="right"
-        android:text="00:00"
-        android:visibility="invisible" />
+        android:adjustViewBounds="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:maxHeight="200dp"
+        android:maxWidth="200dp"
+        android:src="@drawable/powder"
+        android:visibility="gone" />
+
+     </LinearLayout>
 
 </LinearLayout>

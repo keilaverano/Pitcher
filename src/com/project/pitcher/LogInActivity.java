@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -19,7 +20,7 @@ public class LogInActivity extends Activity {
 	Button submit_button;
 	String username = "keilaverano", password = "keila829";
 	Intent intent;
-	TextView sign_up;
+	TextView sign_up, no_account, title;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +32,27 @@ public class LogInActivity extends Activity {
 		password_field = (EditText) findViewById(R.id.password_field);
 		submit_button = (Button) findViewById(R.id.submit_button);
 		sign_up = (TextView) findViewById(R.id.sign_up);
+		no_account = (TextView) findViewById(R.id.no_account);
+		title = (TextView) findViewById(R.id.title);
 		
 		getActionBar().setBackgroundDrawable(getResources().getDrawable(R.color.blue));
+		
+		Typeface font = Typeface.createFromAsset(getAssets(), "quicksand.otf");	
+		
+        int titleId = getResources().getIdentifier("action_bar_title", "id",
+	            "android");
+	    TextView actionBarTitle = (TextView) findViewById(titleId);
+	    actionBarTitle.setTextColor(getResources().getColor(R.color.ivory));
+	    actionBarTitle.setTypeface(font);
+		
+		username_field.setTypeface(font);
+		password_field.setTypeface(font);
+		submit_button.setTypeface(font);
+		sign_up.setTypeface(font);
+		no_account.setTypeface(font);
+		
+		Typeface title_font = Typeface.createFromAsset(getAssets(), "five_minutes.otf");	
+		title.setTypeface(font);
 		
 		submit_button.setOnClickListener(new OnClickListener() {
 			

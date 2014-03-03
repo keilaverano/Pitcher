@@ -4,12 +4,19 @@
           android:icon="@drawable/ic_new_post"
           android:title="New Idea"
           android:showAsAction="always" />
+     
+     <item
+        android:id="@+id/action_home"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_home"
+        android:showAsAction="always"
+        android:title="Timeline"/>
     
     <item
         android:id="@+id/action_settings"
         android:icon="@drawable/ic_settings"
         android:orderInCategory="100"
-        android:showAsAction="always"
+        android:showAsAction="ifRoom"
         android:title="@string/action_settings"/>
             
     <item

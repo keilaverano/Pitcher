@@ -48,7 +48,7 @@
                     android:id="@+id/profile_description"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="This is my bio... blah blah blah"
                     android:textColor="@color/blue" />
 
             </LinearLayout>
@@ -76,11 +76,11 @@
 
                 <Button
                     android:id="@+id/followers"
-                    android:layout_width="wrap_content"
+                    android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:background="@color/blue"
-                    android:text="000"
+                    android:text="5"
                     android:textColor="@color/ivory"
                     android:onClick="goToFollowers"
                     android:textSize="30sp" />
@@ -103,15 +103,15 @@
                     android:text="Following" />
 
                 <Button
-                    android:id="@+id/button2"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/following"
+                    android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:background="@color/blue"
-                    android:textColor="@color/ivory"
                     android:onClick="goToFollowing"
-                    android:textSize="30sp"
-                    android:text="000" />
+                    android:text="5"
+                    android:textColor="@color/ivory"
+                    android:textSize="30sp" />
 
             </LinearLayout>
 
@@ -131,14 +131,15 @@
                     android:text="Ideas" />
 
                 <Button
-                    android:id="@+id/button3"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/ideas"
+                    android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:background="@color/blue"
+                    android:onClick="goToIdeas"
+                    android:text="1"
                     android:textColor="@color/ivory"
-                    android:textSize="30sp"
-                    android:text="000" />
+                    android:textSize="30sp" />
 
             </LinearLayout>
 

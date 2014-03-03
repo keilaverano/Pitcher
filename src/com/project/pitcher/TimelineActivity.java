@@ -4,14 +4,16 @@ import android.app.ActionBar;
 import android.app.ActionBar.Tab;
 import android.app.FragmentTransaction;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
-import com.project.pitcher.adapaters.TabsPagerAdapter;
+import com.project.pitcher.adapters.TabsPagerAdapter;
 
 public class TimelineActivity extends FragmentActivity implements
 		ActionBar.TabListener {
@@ -38,7 +40,16 @@ public class TimelineActivity extends FragmentActivity implements
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 		
 		getActionBar().setBackgroundDrawable(getResources().getDrawable(R.color.blue));
-		getActionBar().setStackedBackgroundDrawable(getResources().getDrawable(R.drawable.tabs_changing_color));
+		getActionBar().setTitle("Timeline"); 
+		getActionBar().setStackedBackgroundDrawable(getResources().getDrawable(R.color.blue));
+		
+		Typeface font = Typeface.createFromAsset(getAssets(), "quicksand.otf");	
+		
+        int titleId = getResources().getIdentifier("action_bar_title", "id",
+	            "android");
+	    TextView actionBarTitle = (TextView) findViewById(titleId);
+	    actionBarTitle.setTextColor(getResources().getColor(R.color.ivory));
+	    actionBarTitle.setTypeface(font);
 
 		// Adding Tabs
 		for (String tab_name : tabs) {
@@ -49,8 +60,6 @@ public class TimelineActivity extends FragmentActivity implements
 
 			@Override
 			public void onPageSelected(int position) {
-				// on changing the page
-				// make respected tab selected	
 						
 				actionBar.setSelectedNavigationItem(position);
 				
@@ -88,9 +97,6 @@ public class TimelineActivity extends FragmentActivity implements
 		case R.id.action_settings:
 			intent = new Intent(TimelineActivity.this, SettingsActivity.class);
 			startActivity(intent); 
-			return true;
-		case R.id.action_terms_and_policies:
-
 			return true;
 		case R.id.action_logout:
 			intent = new Intent(TimelineActivity.this, LogInActivity.class);

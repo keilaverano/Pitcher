@@ -22,6 +22,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
             android:orientation="vertical" >
 
             <TextView
@@ -29,12 +30,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:textColor="@color/blue"
                 android:text="Name" />
 
             <TextView
                 android:id="@+id/follower_username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/yellow_green"
                 android:text="username" />
 
         </LinearLayout>
@@ -46,13 +49,15 @@
 
             <Button
                 android:id="@+id/follow_unfollow_button"
-                android:layout_width="120dp"
-                android:layout_height="40dp"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_marginRight="10dp"
                 android:background="@color/blue"
+                android:onClick="FollowUnfollow"
                 android:text="Following"
+                android:textSize="15sp"
                 android:textColor="@color/ivory" />
 
         </RelativeLayout>

@@ -1,4 +1,4 @@
-package com.project.pitcher.adapaters;
+package com.project.pitcher.adapters;
 
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;

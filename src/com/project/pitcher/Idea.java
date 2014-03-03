@@ -3,7 +3,7 @@ package com.project.pitcher;
 
 public class Idea {
 	
-	private int image;
+	private int image, idea_image;
 	private String name_of_user, username, idea_title, idea_description, time_posted;
 	
 	public Idea() {
@@ -20,6 +20,17 @@ public class Idea {
 		this.idea_description = idea_description;
 		this.time_posted = time_posted;
 	}
+	
+	public Idea(int image, String name_of_user, String username, String idea_title, String idea_description, String time_posted, int idea_image)
+	{
+		this.image = image;
+		this.name_of_user = name_of_user;
+		this.username = username;
+		this.idea_title = idea_title;
+		this.idea_description = idea_description;
+		this.time_posted = time_posted;
+		this.idea_image = idea_image;
+	}
 
 	public void setImage(int image)
 	{
@@ -29,6 +40,16 @@ public class Idea {
 	public int getImage()
 	{
 		return image;
+	}
+	
+	public void setIdeaImage(int idea_image)
+	{
+		this.idea_image=idea_image;
+	}
+	
+	public int getIdeaImage()
+	{
+		return idea_image;
 	}
 	
 	public void setNameOfUser(String name_of_user)

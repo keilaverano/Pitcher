@@ -7,6 +7,11 @@
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="18" />
+    
+     <!-- Accessing camera hardware -->
+    <uses-feature android:name="android.hardware.camera" /> 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
         android:allowBackup="true"
@@ -72,6 +77,20 @@
             </intent-filter>
         </activity>
         <activity android:name="com.project.pitcher.NewPostActivity" >
+            <intent-filter>
+                <action android:name="android.app.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.project.pitcher.DetailActivity" >
+            <intent-filter>
+                <action android:name="android.app.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.project.pitcher.IdeaListActivity" >
             <intent-filter>
                 <action android:name="android.app.action.VIEW" />
 
