@@ -65,7 +65,7 @@ public class HomeFragment extends ListFragment {
 	public void addIdeas() {
 
 		ideas.add(new Idea(R.drawable.ic_girl, "Marjorie Bongbong",
-				"@marjoriebongbong", "Kiss my Pa-Pa-Panda Panda Panda Lips", "", "12:00",
+				"@marjbongbong", "Kiss my Pa-Pa-Panda Panda Panda Lips", "", "12:00",
 				R.drawable.panda_lips));
 
 		ideas.add(new Idea(R.drawable.ic_girl, "Keila Verano", "@keilaverano",

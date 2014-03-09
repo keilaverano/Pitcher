@@ -31,9 +31,7 @@ public class SettingsActivity extends Activity {
 
 	private static int RESULT_LOAD_IMAGE = 1;
 	private static final int CAMERA_CAPTURE_IMAGE_REQUEST_CODE = 100;
-	private static final int CAMERA_CAPTURE_VIDEO_REQUEST_CODE = 200;
     public static final int MEDIA_TYPE_IMAGE = 1;
-    public static final int MEDIA_TYPE_VIDEO = 2;
     
     private static final String IMAGE_DIRECTORY_NAME = "Pitcher Camera";    
     private Uri fileUri;
@@ -272,10 +270,8 @@ public class SettingsActivity extends Activity {
 		if (type == MEDIA_TYPE_IMAGE) {
 			mediaFile = new File(mediaStorageDir.getPath() + File.separator
 					+ "IMG_" + timeStamp + ".jpg");
-		} else if (type == MEDIA_TYPE_VIDEO) {
-			mediaFile = new File(mediaStorageDir.getPath() + File.separator
-					+ "VID_" + timeStamp + ".mp4");
-		} else {
+		}
+		else {
 			return null;
 		}
 
