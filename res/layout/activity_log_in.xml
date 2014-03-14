@@ -60,7 +60,7 @@
         	android:layout_width="match_parent"
         	android:layout_height="wrap_content"
         	android:layout_marginTop="49dp"
-        	android:background="@drawable/button_changing_color"
+        	android:background="@drawable/button_changing_color_blue"
         	android:text="Submit"
         	android:textColor="@color/ivory" />
 	

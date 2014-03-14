@@ -41,7 +41,7 @@
                         android:layout_gravity="center|bottom"
                         android:layout_marginLeft="5dp"
                         android:layout_marginTop="20dp"
-                        android:background="@color/yellow_green"
+                        android:background="@drawable/button_changing_color_green"
                         android:text="Camera"
                         android:textColor="@color/ivory" />
                     
@@ -52,7 +52,7 @@
                         android:layout_gravity="center|bottom"
                         android:layout_marginTop="10dp"
                         android:layout_marginLeft="5dp"
-                        android:background="@color/yellow_green"
+                        android:background="@drawable/button_changing_color_green"
                         android:text="Gallery"
                         android:textColor="@color/ivory" />
                     
@@ -116,7 +116,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="40dp"
-                android:background="@drawable/button_changing_color"
+                android:background="@drawable/button_changing_color_blue"
                 android:text="Save Changes"
                 android:textColor="@color/ivory" />
         </LinearLayout>

@@ -161,7 +161,7 @@ public class RegisterActivity extends Activity {
             String picturePath = cursor.getString(columnIndex);
             cursor.close();
              
-            profile_photo = (ImageView) findViewById(R.id.settings_profile_photo);
+            profile_photo = (ImageView) findViewById(R.id.register_profile_photo);
             profile_photo.setImageBitmap(BitmapFactory.decodeFile(picturePath));
         }
         

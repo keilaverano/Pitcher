@@ -29,7 +29,7 @@ import android.widget.Toast;
 public class NewPostActivity extends Activity {
 
 	EditText title, description;
-	ImageView camera, gallery;
+	ImageView camera, gallery, idea_image;
 
 	private static final int CAMERA_CAPTURE_IMAGE_REQUEST_CODE = 100;
 	private static int RESULT_LOAD_IMAGE = 1;
@@ -118,9 +118,8 @@ public class NewPostActivity extends Activity {
 			String picturePath = cursor.getString(columnIndex);
 			cursor.close();
 
-			// imageView = (ImageView)
-			// findViewById(R.id.register_profile_photo);
-			// imageView.setImageBitmap(BitmapFactory.decodeFile(picturePath));
+			idea_image = (ImageView) findViewById(R.id.new_post_idea_image);
+			idea_image.setImageBitmap(BitmapFactory.decodeFile(picturePath));
 		}
 	}
 
